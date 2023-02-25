@@ -269,13 +269,13 @@ expressions<br>
 <tr>
 <td>INTO OUTFILE 'filename' options</td>
 <td>Записывает набор результатов в файл с именем <span class="arg">filename</span> на хосте сервера. Для <span class="arg">options</span> вы можете указать: <br>
-  <br>
+  <br>
 	FIELDS ESCAPED BY 'character'<br>
 	FIELDS TERMINATED BY 'character' [ OPTIONALLY ENCLOSED BY 'character' ]<br>
 	LINES TERMINATED BY 'character'<br>
-  <br>
-  где <span class="arg">character</span> - это символ, отображаемый как символ ESCAPE, ENCLOSED или TERMINATED. Например: <br>
-  <br>
+  <br>
+  где <span class="arg">character</span> - это символ, отображаемый как символ ESCAPE, ENCLOSED или TERMINATED. Например: <br>
+  <br>
 	SELECT supplier_id, supplier_name<br>
 	  FROM suppliers<br>
 	INTO OUTFILE 'results.txt'<br>
