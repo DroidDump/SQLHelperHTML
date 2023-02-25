@@ -497,22 +497,22 @@ SELECT cоntact_id, last_name, REGEXP_SUBSTR (last_name, 'a|e|i|o|u') AS "First 
 			<div class="crayon-tools" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="Open Code In New Window"><div class="crayon-button-icon"></div></div><span class="crayon-language">PgSQL</span></div></div>
 			<div class="crayon-info" style="min-height: 16.8px !important; line-height: 16.8px !important;"></div>
 			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly="" style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 12px !important; line-height: 15px !important;">
-SELECT REGEXP_SUBSTR ('Oracleplsql is a great resource', '(\\S*)');
+SELECT REGEXP_SUBSTR (Oracle SQL is a great resource', '(\\S*)');
 
---Результат: 'Oracleplsql'</textarea></div>
+--Результат: Oracle SQL'</textarea></div>
 			<div class="crayon-main" style="">
 				<table class="crayon-table">
 					<tr class="crayon-row">
 				<td class="crayon-nums " data-settings="hide">
 					<div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-63f874fd7a93d071631077-1">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-63f874fd7a93d071631077-2">2</div><div class="crayon-num" data-line="crayon-63f874fd7a93d071631077-3">3</div></div>
 				</td>
-						<td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-63f874fd7a93d071631077-1"><span class="crayon-st">SELECT</span><span class="crayon-h"> </span>REGEXP_SUBSTR<span class="crayon-h"> </span>(<span class="crayon-s">'Oracleplsql is a great resource'</span>,<span class="crayon-h"> </span><span class="crayon-s">'(\\S*)'</span>);</div><div class="crayon-line crayon-striped-line" id="crayon-63f874fd7a93d071631077-2">&nbsp;</div><div class="crayon-line" id="crayon-63f874fd7a93d071631077-3"><span class="crayon-c">--Результат: 'Oracleplsql'</span></div></div></td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-63f874fd7a93d071631077-1"><span class="crayon-st">SELECT</span><span class="crayon-h"> </span>REGEXP_SUBSTR<span class="crayon-h"> </span>(<span class="crayon-s">Oracle SQL is a great resource'</span>,<span class="crayon-h"> </span><span class="crayon-s">'(\\S*)'</span>);</div><div class="crayon-line crayon-striped-line" id="crayon-63f874fd7a93d071631077-2">&nbsp;</div><div class="crayon-line" id="crayon-63f874fd7a93d071631077-3"><span class="crayon-c">--Результат: Oracle SQL'</span></div></div></td>
 					</tr>
 				</table>
 			</div>
 		</div>
 <!-- [Format Time: 0.0000 seconds] -->
-<p>В этом примере будет возвращено 'Oracleplsql', поскольку он извлечет все непробельные символы, как указано в <code>(\\S*)</code>, и остановится, когда достигнет первого символа пробела (т.о. пробел). Это приведет к тому, что будет возвращено слово 'Oracleplsql' .<br>
+<p>В этом примере будет возвращено Oracle SQL', поскольку он извлечет все непробельные символы, как указано в <code>(\\S*)</code>, и остановится, когда достигнет первого символа пробела (т.о. пробел). Это приведет к тому, что будет возвращено слово Oracle SQL' .<br>
   Если вы хотите вернуть первые два слова из строки, мы можем изменить пример следующим образом:</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
 
 		<div id="crayon-63f874fd7a940708149170" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 15px !important;">
@@ -521,16 +521,16 @@ SELECT REGEXP_SUBSTR ('Oracleplsql is a great resource', '(\\S*)');
 			<div class="crayon-tools" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="Open Code In New Window"><div class="crayon-button-icon"></div></div><span class="crayon-language">PgSQL</span></div></div>
 			<div class="crayon-info" style="min-height: 16.8px !important; line-height: 16.8px !important;"></div>
 			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly="" style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 12px !important; line-height: 15px !important;">
-SELECT REGEXP_SUBSTR ('Oracleplsql is a great resource', '(\\S*)(\\s)(\\S*)');
+SELECT REGEXP_SUBSTR (Oracle SQL is a great resource', '(\\S*)(\\s)(\\S*)');
 
---Результат: 'Oracleplsql is'</textarea></div>
+--Результат: Oracle SQL is'</textarea></div>
 			<div class="crayon-main" style="">
 				<table class="crayon-table">
 					<tr class="crayon-row">
 				<td class="crayon-nums " data-settings="hide">
 					<div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-63f874fd7a940708149170-1">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-63f874fd7a940708149170-2">2</div><div class="crayon-num" data-line="crayon-63f874fd7a940708149170-3">3</div></div>
 				</td>
-						<td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-63f874fd7a940708149170-1"><span class="crayon-st">SELECT</span><span class="crayon-h"> </span>REGEXP_SUBSTR<span class="crayon-h"> </span>(<span class="crayon-s">'Oracleplsql is a great resource'</span>,<span class="crayon-h"> </span><span class="crayon-s">'(\\S*)(\\s)(\\S*)'</span>);</div><div class="crayon-line crayon-striped-line" id="crayon-63f874fd7a940708149170-2">&nbsp;</div><div class="crayon-line" id="crayon-63f874fd7a940708149170-3"><span class="crayon-c">--Результат: 'Oracleplsql is'</span></div></div></td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-63f874fd7a940708149170-1"><span class="crayon-st">SELECT</span><span class="crayon-h"> </span>REGEXP_SUBSTR<span class="crayon-h"> </span>(<span class="crayon-s">Oracle SQL is a great resource'</span>,<span class="crayon-h"> </span><span class="crayon-s">'(\\S*)(\\s)(\\S*)'</span>);</div><div class="crayon-line crayon-striped-line" id="crayon-63f874fd7a940708149170-2">&nbsp;</div><div class="crayon-line" id="crayon-63f874fd7a940708149170-3"><span class="crayon-c">--Результат: Oracle SQL is'</span></div></div></td>
 					</tr>
 				</table>
 			</div>
