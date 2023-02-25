@@ -196,27 +196,27 @@ box-shadow: none;
 <td>Равно</td>
 </tr>
 <tr>
-<td><=></td>
+<td>&lt;=&gt;</td>
 <td>Равно (безопасное сравнение значения NULL)</td>
 </tr>
 <tr>
-<td><>, !=</td>
+<td>&lt;&gt;, !=</td>
 <td>Не равно</td>
 </tr>
 <tr>
-<td>></td>
+<td>&gt;</td>
 <td>Больше, чем</td>
 </tr>
 <tr>
-<td>>=</td>
+<td>&gt;=</td>
 <td>Больше или равно</td>
 </tr>
 <tr>
-<td><</td>
+<td>&lt;</td>
 <td>Меньше, чем</td>
 </tr>
 <tr>
-<td><=</td>
+<td>&lt;=</td>
 <td>Меньше или равно</td>
 </tr>
 <tr>
@@ -251,7 +251,7 @@ box-shadow: none;
 </table>
 <p>Рассмотрим примеры операторов сравнения, которые вы можете использовать в MySQL.</p>
 <h2>Пример оператора равенства</h2>
-<p>В MySQL вы можете использовать оператор <span class="arg">=</span>  для проверки равенства в запросе. Оператор <span class="arg"><=></span> может проверять только равенство со значениями, которые не являются NULL.<br>
+<p>В MySQL вы можете использовать оператор <span class="arg">=</span>  для проверки равенства в запросе. Оператор <span class="arg">&lt;=&gt;</span> может проверять только равенство со значениями, которые не являются NULL.<br>
 Например:</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
 
 		<div id="crayon-63f8a84490c34150390056" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 15px !important;">
@@ -277,8 +277,8 @@ WHERE last_name = 'Bernard';</textarea></div>
 <!-- [Format Time: 0.0023 seconds] -->
 <p>В этом примере оператора SELECT, возвращает все строки из таблицы <span class="arg">contacts</span>, где <span class="arg">last_name</span> равно Bernard.</p>
 <h2>Пример оператора равенства (безопасный с нулевыми значениями)</h2>
-<p>Поскольку оператор <span class="arg">=</span> только сравнивает значения, отличные от NULL, использовать значения NULL небезопасно. Чтобы преодолеть это ограничение, MySQL добавил оператор<span class="arg"><=></span>, чтобы вы могли проверить равенство как со значениями NULL, так и с не NULL значениями.</p>
-<p>Чтобы лучше объяснить разницу между оператором <span class="arg">=</span> и оператором <span class="arg"><=></span>, мы будем включать некоторые примеры как с запросами, так и с данными.</p>
+<p>Поскольку оператор <span class="arg">=</span> только сравнивает значения, отличные от NULL, использовать значения NULL небезопасно. Чтобы преодолеть это ограничение, MySQL добавил оператор<span class="arg">&lt;=&gt;</span>, чтобы вы могли проверить равенство как со значениями NULL, так и с не NULL значениями.</p>
+<p>Чтобы лучше объяснить разницу между оператором <span class="arg">=</span> и оператором <span class="arg">&lt;=&gt;</span>, мы будем включать некоторые примеры как с запросами, так и с данными.</p>
 <p>Предполагая, что у нас в MySQL есть таблица, называемая <span class="arg">contacts</span>, которая заполнена следующими данными:</p>
 <table>
 <tbody>
@@ -355,7 +355,7 @@ WHERE site1 = site2;</textarea></div>
 </tbody>
 </table>
 <p>В вышеприведенном примере оператор SELECT возвращает все строки из таблицы <span class="arg">contacts</span>, где <span class="arg">site1</span> равен <span class="arg">site2</span>. Он не возвращает вторую запись, в которой значения <span class="arg">site1</span> и <span class="arg">site2</span> имеют значения NULL.</p>
-<p>Теперь давайте посмотрим, что произойдет, когда мы перепишем наш запрос с помощью оператора <span class="arg"><=></span>, который безопасен для использования со значениями NULL:</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+<p>Теперь давайте посмотрим, что произойдет, когда мы перепишем наш запрос с помощью оператора <span class="arg">&lt;=&gt;</span>, который безопасен для использования со значениями NULL:</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
 
 		<div id="crayon-63f8a84490c3d531263326" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 15px !important;">
 		
@@ -378,7 +378,7 @@ WHERE site1 &lt;=&gt; site2;</textarea></div>
 			</div>
 		</div>
 <!-- [Format Time: 0.0001 seconds] -->
-<p>Поскольку мы используем оператор <span class="arg"><=></span>, мы получим следующий результат:</p>
+<p>Поскольку мы используем оператор <span class="arg">&lt;=&gt;</span>, мы получим следующий результат:</p>
 <table>
 <tbody>
 <tr>
@@ -403,8 +403,8 @@ WHERE site1 &lt;=&gt; site2;</textarea></div>
 </table>
 <p>Теперь наш запрос возвращает все строки из таблицы <span class="arg">contacts</span>, где <span class="arg">site1</span> равен <span class="arg">site2</span>, включая те записи, где <span class="arg">site1</span> и <span class="arg">site2</span> имеют значения NULL.</p>
 <h2>Пример оператора неравенства</h2>
-<p>В MySQL вы можете использовать операторы <span class="arg"><></span> или <span class="arg">!=</span>. Для проверки неравенства в запросе.</p>
-<p>Например, мы могли бы проверить неравенство с помощью оператора <span class="arg"><></span> следующим образом:</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+<p>В MySQL вы можете использовать операторы <span class="arg">&lt;&gt;</span> или <span class="arg">!=</span>. Для проверки неравенства в запросе.</p>
+<p>Например, мы могли бы проверить неравенство с помощью оператора <span class="arg">&lt;&gt;</span> следующим образом:</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
 
 		<div id="crayon-63f8a84490c44190535075" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 15px !important;">
 		
@@ -452,8 +452,8 @@ WHERE last_name != 'Bernard';</textarea></div>
 		</div>
 <!-- [Format Time: 0.0001 seconds] -->
 <p>Оба этих запроса возвратят одинаковые результаты.</p>
-<h2>Пример оператора <span class="arg">></span> </h2>
-<p>Вы можете использовать оператор <span class="arg">></span> в MySQL для проверки выражения «более чем».</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+<h2>Пример оператора <span class="arg">&gt;</span> </h2>
+<p>Вы можете использовать оператор <span class="arg">&gt;</span> в MySQL для проверки выражения «более чем».</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
 
 		<div id="crayon-63f8a84490c49728187890" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 15px !important;">
 		
@@ -477,8 +477,8 @@ WHERE contact_id &gt; 20;</textarea></div>
 		</div>
 <!-- [Format Time: 0.0001 seconds] -->
 <p>В этом примере оператор SELECT будет возвращать все строки из таблицы <span class="arg">contacts</span>, где <span class="arg">contact_id</span> больше 20. В набор результатов не будет включен <span class="arg">contact_id</span>, равный 20.</p>
-<h2>Пример оператора <span class="arg">>=</span> </h2>
-<p>В MySQL вы можете использовать оператор <span class="arg">>=</span> для проверки выражения, «больше или равно».</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+<h2>Пример оператора <span class="arg">&gt;=</span> </h2>
+<p>В MySQL вы можете использовать оператор <span class="arg">&gt;=</span> для проверки выражения, «больше или равно».</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
 
 		<div id="crayon-63f8a84490c4c142338588" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 15px !important;">
 		
@@ -502,8 +502,8 @@ WHERE contact_id &gt;= 20;</textarea></div>
 		</div>
 <!-- [Format Time: 0.0001 seconds] -->
 <p>В этом примере оператор SELECT вернет все строки из таблицы <span class="arg">contacts</span>, где <span class="arg">contact_id</span> больше или равен 20. В этом случае <span class="arg">contact_id</span> равный 20, будет включен в результирующий набор.</p>
-<h2>Пример оператора <span class="arg"><</span> </h2>
-<p>Вы можете использовать оператор <span class="arg"><</span> в MySQL для проверки выражения «меньше чем».</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+<h2>Пример оператора <span class="arg">&lt;</span> </h2>
+<p>Вы можете использовать оператор <span class="arg">&lt;</span> в MySQL для проверки выражения «меньше чем».</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
 
 		<div id="crayon-63f8a84490c4f474641496" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 15px !important;">
 		
@@ -527,8 +527,8 @@ WHERE contact_id &lt; 150;</textarea></div>
 		</div>
 <!-- [Format Time: 0.0001 seconds] -->
 <p>В этом примере оператор SELECT вернет все строки из таблицы <span class="arg">contacts</span>, где <span class="arg">contact_id</span> меньше 150. <span class="arg">contact_id</span> равный 150, не будет включен в результирующий набор.</p>
-<h2>Пример оператора <span class="arg"><=</span></h2>
-<p>В MySQL вы можете использовать оператор <span class="arg"><=</span> для проверки выражения, которое «меньше или равно».</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+<h2>Пример оператора <span class="arg">&lt;=</span></h2>
+<p>В MySQL вы можете использовать оператор <span class="arg">&lt;=</span> для проверки выражения, которое «меньше или равно».</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
 
 		<div id="crayon-63f8a84490c51426582160" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 15px !important;">
 		
@@ -582,7 +582,7 @@ WHERE contact_id &lt;= 150;</textarea></div>
 
 	<div id="secondary" class="widget-area">
 					<div id="sidebar-1" class="sidebar" role="complementary">
-<div>&copy; Клуб дедов-программистов</div><aside id="nav_menu-10" class="widget widget_nav_menu"><h1 class="widget-title">MySQL</h1><div class="menu-mysql-container"><ul id="menu-mysql" class="menu"><li id="menu-item-7563" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7563"><a href="mysql-manual.html">MySQL Full</a></li>
+<aside id="nav_menu-10" class="widget widget_nav_menu"><h1 class="widget-title">MySQL</h1><div class="menu-mysql-container"><ul id="menu-mysql" class="menu"><li id="menu-item-7563" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7563"><a href="mysql-manual.html">MySQL Full</a></li>
 <li id="menu-item-7560" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7560"><a href="administration-mysql.html">Администрирование БД</a></li>
 <li id="menu-item-7562" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7562"><a href="procedures-mysql.html">Процедуры</a></li>
 <li id="menu-item-7564" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7564"><a href="functions-mysql.html">Функции</a></li>

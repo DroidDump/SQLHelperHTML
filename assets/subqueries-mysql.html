@@ -221,7 +221,7 @@ WHERE c.site_name IN
 <p>Подзапрос, содержащийся в предложении оператора SELECT:</p>
 <div class="sintax">(SELECT a.site_name<br>
  FROM address_book a<br>
- WHERE a.address_book_id < 50);</div>
+ WHERE a.address_book_id &lt; 50);</div>
 <p>Этот подзапрос позволяет находить все значения поля <span class="arg">site_name</span> из таблицы <span class="arg">address_book</span>, у которого <span class="arg">address_book_id</span> менее 50. Подзапрос затем используется для фильтрации результатов основного запроса с использованием условия IN.</p>
 <p>Этот подзапрос может быть альтернативно записан как INNER-соединение следующим образом:</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
 

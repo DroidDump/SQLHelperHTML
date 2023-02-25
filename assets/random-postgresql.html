@@ -192,7 +192,7 @@ box-shadow: none;
 <p>  Для функции random нет параметров или аргументов.</p>
 <h2>Примечание</h2>
 <ul>
-<li>Функция random вернет значение от 0 (включительно) до 1 (исключая), поэтому значение будет находится в диапазоне >= 0 и <1.</li>
+<li>Функция random вернет значение от 0 (включительно) до 1 (исключая), поэтому значение будет находится в диапазоне &gt;= 0 и &lt;1.</li>
 <li>Используйте функцию setseed, чтобы установить начальное значение для функции random.</li>
 <li>Функция random возвращает полностью случайное число, если начальное число не задано (начальное значение задано функцией setseed)</li>
 <li>Функция random будет возвращать повторяемую последовательность случайных чисел каждый раз, когда используется конкретное начальное значение (начальное значение устанавливается с помощью функции setseed).</li>
@@ -240,7 +240,7 @@ SELECT random()*(25-10)+10;</textarea></div>
 			</div>
 		</div>
 <!-- [Format Time: 0.0000 seconds] -->
-<p>Приведенная выше формула будет генерировать случайное десятичное число >= 10 и < 25. (<strong>Примечание</strong>: эта формула никогда не вернет значение 25, потому что функция random никогда не вернет 1.)</p>
+<p>Приведенная выше формула будет генерировать случайное десятичное число &gt;= 10 и &lt; 25. (<strong>Примечание</strong>: эта формула никогда не вернет значение 25, потому что функция random никогда не вернет 1.)</p>
 <h2>random диапазона целых чисел</h2>
 <p>  Чтобы создать случайное целое число между двумя значениями (диапазон), вы можете использовать следующую формулу:</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
 
@@ -291,7 +291,7 @@ SELECT floor(random()*(25-10+1))+10;</textarea></div>
 <li>PostgreSQL 11, PostgreSQL 10, PostgreSQL 9.6, PostgreSQL 9.5, PostgreSQL 9.4, PostgreSQL 9.3, PostgreSQL 9.2, PostgreSQL 9.1, PostgreSQL 9.0, PostgreSQL 8.4</li>
 </ul>
 <h2>Пример random числа</h2>
-<p>  Рассмотрим, как использовать функцию random в PostgreSQL для генерации случайного числа >= 0 и < 1.
+<p>  Рассмотрим, как использовать функцию random в PostgreSQL для генерации случайного числа &gt;= 0 и &lt; 1.
   Например:
   </p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
 
@@ -324,7 +324,7 @@ SELECT random();
 
 <h2>Пример random десятичного диапазона</h2>
 <p>  Рассмотрим, как использовать функцию random в PostgreSQL для генерации random десятичного числа между двумя числами (т.е.: диапазон).<br>
-  Например, следующее будет генерировать случайное десятичное значение, которое >= 1 и < 10 (<strong>Примечание</strong>: оно никогда не вернет значение 10):</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+  Например, следующее будет генерировать случайное десятичное значение, которое &gt;= 1 и &lt; 10 (<strong>Примечание</strong>: оно никогда не вернет значение 10):</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
 
 		<div id="crayon-63f861fc391a8447874081" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 15px !important;">
 		
@@ -348,7 +348,7 @@ SELECT random()*(10-1)+1;
 		</div>
 <!-- [Format Time: 0.0000 seconds] -->
 <p></p>
-<p>  В следующем примере будет генерироваться случайное десятичное значение >= 25 и < 40 (<strong>Примечание</strong>: оно никогда не вернет значение 40):</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+<p>  В следующем примере будет генерироваться случайное десятичное значение &gt;= 25 и &lt; 40 (<strong>Примечание</strong>: оно никогда не вернет значение 40):</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
 
 		<div id="crayon-63f861fc391aa467257368" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 15px !important;">
 		

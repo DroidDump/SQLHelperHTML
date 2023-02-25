@@ -198,7 +198,7 @@ box-shadow: none;
 <td>Равно</td>
 </tr>
 <tr>
-<td><></td>
+<td>&lt;&gt;</td>
 <td>Не равно</td>
 </tr>
 <tr>
@@ -206,19 +206,19 @@ box-shadow: none;
 <td>Не равно</td>
 </tr>
 <tr>
-<td>></td>
+<td>&gt;</td>
 <td>Больше чем</td>
 </tr>
 <tr>
-<td>>=</td>
+<td>&gt;=</td>
 <td>Больше или равно</td>
 </tr>
 <tr>
-<td><</td>
+<td>&lt;</td>
 <td>Меньше, чем</td>
 </tr>
 <tr>
-<td><=</td>
+<td>&lt;=</td>
 <td>Меньше или равно</td>
 </tr>
 <tr>
@@ -366,7 +366,7 @@ SELECT *
 <p>  Будет выбрана 1 запись. Вот результаты, которые вы должны получить:</p>
 <p>В этом примере приведенный выше оператор SELECT возвращает все строки из таблицы <span class="arg">suppliers</span>, где <span class="arg">supplier_name</span> равно Yandex.</p>
 <h2>Пример - оператор неравенства</h2>
-<p>  В SQL есть два способа проверить неравенство в запросе. Вы можете использовать оператор <code><></code> или <code>!=</code>. Оба вернут одинаковые результаты.<br>
+<p>  В SQL есть два способа проверить неравенство в запросе. Вы можете использовать оператор <code>&lt;&gt;</code> или <code>!=</code>. Оба вернут одинаковые результаты.<br>
   Давайте использовать ту же таблицу <span class="arg">suppliers</span>, что и в предыдущем примере.</p>
 <table>
 <thead>
@@ -434,7 +434,7 @@ SELECT *
 </tr>
 </tbody>
 </table>
-<p>  Выполните следующий SQL оператор, чтобы проверить неравенство, используя оператор <code><></code>:</p>
+<p>  Выполните следующий SQL оператор, чтобы проверить неравенство, используя оператор <code>&lt;&gt;</code>:</p>
 <p></p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
 
 		<div id="crayon-63f87deb61bff467912565" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 15px !important;">
@@ -766,7 +766,7 @@ SELECT *
 </table>
 <p>В этом примере оператор SELECT будет возвращать все строки из таблицы <span class="arg">customers</span>, где <span class="arg">customer_id</span> больше или равен 6000. В этом случае значение <span class="arg">supplier_id</span>, равное 6000, будет включено в набор результатов.</p>
 <h2>Пример - оператор меньше, чем</h2>
-<p>Вы можете использовать оператор <code><</code> в SQL, чтобы проверить выражение меньше, чем.</p>
+<p>Вы можете использовать оператор <code>&lt;</code> в SQL, чтобы проверить выражение меньше, чем.</p>
 <p>В этом примере у нас есть таблица <span class="arg">products</span> со следующими данными:</p>
 <table>
 <thead>
@@ -873,7 +873,7 @@ SELECT *
 </table>
 <p>В этом примере оператор SELECT возвращает все строки из таблицы <span class="arg">products</span>, где <span class="arg">product_id</span> меньше 5. <span class="arg">product_id</span>, равный 5, не будет включен в набор результатов.</p>
 <h2>Пример - оператор меньше или равно</h2>
-<p>В SQL вы можете использовать оператор <code><=</code> для проверки выражения, которое меньше или равно.</p>
+<p>В SQL вы можете использовать оператор <code>&lt;=</code> для проверки выражения, которое меньше или равно.</p>
 <p>Давайте использовать ту же таблицу <span class="arg">products</span>, что и в предыдущем примере.</p>
 <table>
 <thead>

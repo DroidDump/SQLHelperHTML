@@ -197,11 +197,11 @@ box-shadow: none;
 <td>Равно</td>
 </tr>
 <tr>
-<td><a href="#ravnosavenull"><=></a></td>
+<td><a href="#ravnosavenull">&lt;=&gt;</a></td>
 <td>Равно (Безопасное сравнение значения NULL)</td>
 </tr>
 <tr>
-<td><a href="#neravno"><></a></td>
+<td><a href="#neravno">&lt;&gt;</a></td>
 <td>Не равно</td>
 </tr>
 <tr>
@@ -209,19 +209,19 @@ box-shadow: none;
 <td>Не равно</td>
 </tr>
 <tr>
-<td><a href="#bolshe">></a></td>
+<td><a href="#bolshe">&gt;</a></td>
 <td>Больше чем</td>
 </tr>
 <tr>
-<td><a href="#bolsheiliravno">>=</a></td>
+<td><a href="#bolsheiliravno">&gt;=</a></td>
 <td>Больше или равно</td>
 </tr>
 <tr>
-<td><a href="#menshe"><</a></td>
+<td><a href="#menshe">&lt;</a></td>
 <td>Меньше, чем</td>
 </tr>
 <tr>
-<td><a href="#mensheiliravno"><=</a></td>
+<td><a href="#mensheiliravno">&lt;=</a></td>
 <td>Меньше или равно</td>
 </tr>
 <tr>
@@ -284,8 +284,8 @@ SELECT *
 <p>В этом примере приведенная выше оператор SELECT возвращает все строки из таблицы <span class="arg">sites</span>, где <span class="arg">site_name</span> равно "Google.com"</p>
 <p><a name="ravnosavenull"></a></p>
 <h2>Пример оператор равенства (безопасный со значениями NULL)</h2>
-<p>  Поскольку оператор <code>=</code> сравнивает только ненулевые значения, использование со значениями NULL небезопасно. Чтобы преодолеть это ограничение, MariaDB добавила оператор <code><=></code>, чтобы вы могли проверить на равенство как с NULL, так и с ненулевыми значениями.<br>
-  Чтобы лучше объяснить разницу между оператором <code>=</code> и оператором <code>< = ></code>, мы приведем несколько примеров с запросами и данными.<br>
+<p>  Поскольку оператор <code>=</code> сравнивает только ненулевые значения, использование со значениями NULL небезопасно. Чтобы преодолеть это ограничение, MariaDB добавила оператор <code>&lt;=&gt;</code>, чтобы вы могли проверить на равенство как с NULL, так и с ненулевыми значениями.<br>
+  Чтобы лучше объяснить разницу между оператором <code>=</code> и оператором <code>&lt;=&gt;</code>, мы приведем несколько примеров с запросами и данными.<br>
   Предполагая, что у нас есть таблица с именем <span class="arg">sites</span> в MariaDB, которая заполнена следующими данными:</p>
 <table>
 <thead>
@@ -366,7 +366,7 @@ SELECT *
 </tbody>
 </table>
 <p>  В приведенном выше примере оператор SELECT возвращает все строки из таблицы <span class="arg">sites</span>, где <span class="arg">server1</span> равен <span class="arg">server2</span>. Он не возвращает вторую запись, где <span class="arg">server1</span> и <span class="arg">server2</span> оба имеют значения NULL.<br>
-  Теперь давайте посмотрим, что происходит, когда мы перепишем наш запрос с помощью оператора <code><=></code>, который безопасно использовать со значениями NULL:</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+  Теперь давайте посмотрим, что происходит, когда мы перепишем наш запрос с помощью оператора <code>&lt;=&gt;</code>, который безопасно использовать со значениями NULL:</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
 
 		<div id="crayon-63f871ab3b242450677754" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 15px !important;">
 		
@@ -389,7 +389,7 @@ SELECT *
 			</div>
 		</div>
 <!-- [Format Time: 0.0000 seconds] -->
-<p>Поскольку мы использовали оператор <code><=></code>, мы получили следующие результаты:</p>
+<p>Поскольку мы использовали оператор <code>&lt;=&gt;</code>, мы получили следующие результаты:</p>
 <table>
 <thead>
 <tr>
@@ -417,8 +417,8 @@ SELECT *
 <p>  Теперь наш запрос возвращает все строки из таблицы <span class="arg">sites</span>, где <span class="arg">server1</span> равен <span class="arg">server2</span>, включая те записи, где <span class="arg">server1</span> и <span class="arg">server2</span> являются значениями NULL.<br>
 <a name="neravno"></a></p>
 <h2>Пример оператор неравенства</h2>
-<p>  В MariaDB вы можете использовать операторы <code><></code> или <code> != </code> для проверки неравенства в запросе.<br>
-  Например, мы можем проверить неравенство, используя оператор <code><></code>, следующим образом:</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+<p>  В MariaDB вы можете использовать операторы <code>&lt;&gt;</code> или <code> != </code> для проверки неравенства в запросе.<br>
+  Например, мы можем проверить неравенство, используя оператор <code>&lt;&gt;</code>, следующим образом:</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
 
 		<div id="crayon-63f871ab3b247451534329" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 15px !important;">
 		
@@ -521,7 +521,7 @@ SELECT *
 <p>В этом примере оператор SELECT возвращает все строки из таблицы <span class="arg">sites</span>, где <span class="arg">site_id</span> больше или равен 3. В этом случае <span class="arg">site_id</span> равный 3 будет включено в набор результатов.<br>
 <a name="menshe"></a></p>
 <h2>Пример оператора меньше чем</h2>
-<p>  Вы можете использовать оператор <code><</code> в MariaDB, чтобы проверить выражение меньше чем.</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+<p>  Вы можете использовать оператор <code>&lt;</code> в MariaDB, чтобы проверить выражение меньше чем.</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
 
 		<div id="crayon-63f871ab3b251420066655" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 15px !important;">
 		
@@ -547,7 +547,7 @@ SELECT *
 <p>В этом примере оператор SELECT возвращает все строки из таблицы <span class="arg">sites</span>, где <span class="arg">site_id</span> меньше 50. <span class="arg">site_id</span>, равный 50, не включаться в набор результатов.<br>
 <a name="mensheiliravno"></a></p>
 <h2>Пример оператора меньше или равно</h2>
-<p>  В MariaDB вы можете использовать оператор <code><=</code> для проверки выражения, которое меньше или равно.</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+<p>  В MariaDB вы можете использовать оператор <code>&lt;=</code> для проверки выражения, которое меньше или равно.</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
 
 		<div id="crayon-63f871ab3b253095622795" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 15px !important;">
 		

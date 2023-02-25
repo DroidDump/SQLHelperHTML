@@ -197,7 +197,7 @@ box-shadow: none;
 <td>Равно</td>
 </tr>
 <tr>
-<td><></td>
+<td>&lt;&gt;</td>
 <td>Не равно</td>
 </tr>
 <tr>
@@ -205,19 +205,19 @@ box-shadow: none;
 <td>Не равно</td>
 </tr>
 <tr>
-<td>></td>
+<td>&gt;</td>
 <td>Больше чем</td>
 </tr>
 <tr>
-<td>>=</td>
+<td>&gt;=</td>
 <td>Больше или равно</td>
 </tr>
 <tr>
-<td><</td>
+<td>&lt;</td>
 <td>Меньше чем</td>
 </tr>
 <tr>
-<td><=</td>
+<td>&lt;=</td>
 <td>Меньше или равно</td>
 </tr>
 <tr>
@@ -277,9 +277,9 @@ WHERE first_name = 'Frosya';</textarea></div>
 		</div>
 <!-- [Format Time: 0.0011 seconds] -->
 <p>В этом примере приведенный выше оператор SELECT возвращает все строки из таблицы <span class="arg">employee</span>, где <span class="arg">first_name</span> равно Frosya.</p>
-<h2>Пример - оператор <code><></code></h2>
-<p>  В PostgreSQL два способа проверить неравенство в запросе. Вы можете использовать оператор <code><></code> или <code>!=</code>.<br>
-  Например, мы можем проверить неравенство, используя оператор <code><></code>, следующим образом :</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+<h2>Пример - оператор <code>&lt;&gt;</code></h2>
+<p>  В PostgreSQL два способа проверить неравенство в запросе. Вы можете использовать оператор <code>&lt;&gt;</code> или <code>!=</code>.<br>
+  Например, мы можем проверить неравенство, используя оператор <code>&lt;&gt;</code>, следующим образом :</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
 
 		<div id="crayon-63f8665abdd57129628538" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-mac print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 15px !important;">
 		
@@ -378,7 +378,7 @@ WHERE product_id &gt;= 50;</textarea></div>
 		</div>
 <!-- [Format Time: 0.0000 seconds] -->
 <p>В этом примере оператор SELECT вернет все строки из таблицы <span class="arg">products</span>, где <span class="arg">product_id</span> больше или равен 50. В этом случае <span class="arg">product_id</span> равный 50 будет включен в набор результатов.</p>
-<h2>Пример - оператор <code><</code> </h2>
+<h2>Пример - оператор <code>&lt;</code> </h2>
 <p>  Вы можете использовать оператор <code>&lt;</code> в PostgreSQL, чтобы проверить выражение меньше чем.</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
 
 		<div id="crayon-63f8665abdd61938376297" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-mac print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 15px !important;">
@@ -403,7 +403,7 @@ WHERE inventory_id &lt; 25;</textarea></div>
 		</div>
 <!-- [Format Time: 0.0000 seconds] -->
 <p>В этом примере оператор SELECT вернет все строки из таблицы <span class="arg">inventory</span>, где <span class="arg">inventory_id</span> меньше 25. Значение <span class="arg">inventory_id</span>, равное 25, не будет включено в набор результатов.</p>
-<h2>Пример - оператор <code><=</code> </h2>
+<h2>Пример - оператор <code>&lt;=</code> </h2>
 <p>  В PostgreSQL вы можете использовать оператор <code>&lt;=</code> для проверки выражения, которое меньше или равно.</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
 
 		<div id="crayon-63f8665abdd64647438801" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-mac print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 15px !important;">
