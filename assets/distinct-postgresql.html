@@ -17,7 +17,7 @@
 <header id="masthead" class="site-header" role="banner">
 <div class="site-branding">
 <h1 class="site-title"><a href="index.html" rel="home">SQL Helper</a></h1>
-</div><!-- .site-branding -->
+</div>
 <nav role="navigation" class="site-navigation main-navigation">
 <h1 class="assistive-text">Menu</h1>
 <div class="assistive-text skip-link"><a href="#content" title="Skip to content">Skip to content</a></div>
@@ -28,11 +28,12 @@
 <li id="menu-item-7343" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7343"><a href="sqlite-manual.html">SQLite</a></li>
 <li id="menu-item-6422" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6422"><a href="postgresql-manual.html">PostgreSQL</a></li>
 <li id="menu-item-7201" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7201"><a href="mariadb-manual.html">MariaDB</a></li>
-</ul></div>		</nav><!-- .site-navigation .main-navigation -->
+</ul>
+</div>
+</nav>
 
 
-</header><!-- #masthead .site-header -->
-<div id="main" class="site-main">
+</header><div id="main" class="site-main">
 <div id="primary" class="content-area">
 <div id="content" class="site-content" role="main">
 
@@ -41,9 +42,8 @@
 <header class="entry-header">
 <h1 class="entry-title">PostgreSQL оператор DISTINCT</h1>
 <div class="entry-meta">
-<!--	-->
-</div><!-- .entry-meta -->
-</header><!-- .entry-header -->
+</div>
+</header>
 <div class="entry-content">
 <p>В этом учебном пособии вы узнаете, как использовать PostgreSQL оператор <strong>DISTINCT</strong> с синтаксисом и примерами.</p>
 <p>  <span id="more-6075"></span></p>
@@ -155,15 +155,15 @@ ORDER BY last_name, city, state;</textarea></div>
 <!-- [Format Time: 0.0001 seconds] -->
 <p>Этот пример DISTINCT, в котором используются ключевые слова DISTINCT ON, вернет все уникальные значения <span class="arg">last_name</span>. Но в этом случае для каждого уникального значения <span class="arg">last_name</span> он будет возвращать только первую уникальную запись <span class="arg">last_name</span>, с которой он сталкивается, на основе оператора ORDER BY вместе с <span class="arg">city</span> и <span class="arg">state</span> значениями из этой записи.<br>
 Он не возвращает уникальные комбинации <span class="arg">last_name</span>, <span class="arg">city</span> и <span class="arg">state</span>. По сути, он выполняет LIMIT, равный 1, для каждого DISTINCT ON (<span class="arg">last_name</span>) и возвращает соответствующие значения <span class="arg">city</span> и <span class="arg">state</span> после того, как он выбрал возвращеные записи.</p>
-</div><!-- .entry-content -->
+</div>
 <footer class="entry-meta">
 <span class="cat-links">
-Рубрика:&nbsp;<a href="category/programming-postgresql.html" rel="category tag">Программирование PostgreSQL</a>			</span>
+Рубрика:&nbsp;<a href="category/programming-postgresql.html" rel="category tag">Программирование PostgreSQL</a></span>
 
 
 <span class="sep"> | </span>
 <span class="permalink"><a href="distinct-postgresql.html" rel="bookmark" title="Прямая ссылка на PostgreSQL оператор DISTINCT">Permalink</a></span>
-</footer><!-- .entry-meta -->
+</footer>
 </article>
 
 <nav role="navigation" id="nav-below" class="site-navigation post-navigation">
@@ -171,11 +171,11 @@ ORDER BY last_name, city, state;</textarea></div>
 
 <div class="nav-previous"><a href="delete-postgresql.html" rel="prev"><span class="meta-nav">&laquo;</span> PostgreSQL оператор DELETE</a></div>		<div class="nav-next"><a href="except-postgresql.html" rel="next">PostgreSQL оператор EXCEPT <span class="meta-nav">&raquo;</span></a></div>
 
-</nav><!-- #nav-below -->
+</nav>
 
 
-</div><!-- #content .site-content -->
-</div><!-- #primary .content-area -->
+</div>
+</div>
 <div id="secondary" class="widget-area">
 <div id="sidebar-1" class="sidebar" role="complementary">
 <aside id="nav_menu-12" class="widget widget_nav_menu"><h1 class="widget-title">PostgreSQL</h1><div class="menu-postgresql-container"><ul id="menu-postgresql" class="menu"><li id="menu-item-7628" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7628"><a href="postgresql-manual.html">PostgreSQL Full</a></li>
@@ -194,14 +194,16 @@ ORDER BY last_name, city, state;</textarea></div>
 <li id="menu-item-7511" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7511"><a href="string-function-postgresql.html">Строковые</a></li>
 <li id="menu-item-7512" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7512"><a href="numeric-mathematical-functions-postgresql.html">Числовые/математические</a></li>
 </ul></div></aside><aside id="custom_html-8" class="widget_text widget widget_custom_html"><div class="textwidget custom-html-widget">
-</div></aside>			</div><!-- #sidebar-right -->
+</div></aside>
+</div>
 
 </div>
-</div><!-- #main .site-main -->
+</div>
 <footer id="colophon" class="site-footer" role="contentinfo">
 <div class="site-info">
-<div>&copy; Клуб дедов-программистов</div>		</div>
-</footer><!-- #colophon .site-footer -->
-</div><!-- #page .hfeed .site -->
+<div>&copy; Клуб дедов-программистов</div>
+</div>
+</footer>
+</div>
 <script src="wp-content/cache/min/1/5da3b72814b1a36896cd845e11329e29.js" data-minify="1" defer=""></script></body>
 </html>
